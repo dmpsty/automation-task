@@ -1,2 +1,2 @@
 # automation-task
-Bash scripting yang di dalemnya ada file bootstrap sama main-setup buat task pre-ticket probation. Isi file-nya itu dari setup dependencies, deploy aplikasi, sampe req ssl lets encrypt.
+Otomatisasi taks pre-ticket probation menggunakan Bash scripting yang mengintegrasikan file bootstrap dan main-setup. Cakupan skrip ini meliputi konfigurasi dependencies, deployment aplikasi, hingga pengajuan sertifikat SSL Let's Encrypt."
