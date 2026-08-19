@@ -1,16 +1,16 @@
 #!/usr/bin/env bash
 # ==============================================================================
 # SCRIPT 1	: BOOTSTRAP & PRE-INSTALLATION DEPENDENCIES
-# Author     	: Damay Prasetya
+# Author    : Damay Prasetya
 # OS	   	: AlmaLinux 10
 # Spek VPS 	: 2GB RAM / 2 vCPU / 20GB Storage
 # ==============================================================================
 
 set -euo pipefail
 
-# --- DEFINISI VARIABEL REPOSITORY GITHUB ---
-GITHUB_REPO_URL="https://github.com/damayprasetya/cloud-automation-task.git"
-DEST_DIR="/root/cloud-automation-task"
+# --- DEFINISI VARIABEL REPOSITORY GITHUB | SESUAIKAN DENGAN TASK ---
+GITHUB_REPO_URL="https://github.com/dmpsty/automation-task.git"
+DEST_DIR="/home/damay/automation-test"
 
 echo "=== [SECTION 1] Update System & Install EPEL Repository ==="
 dnf update -y
@@ -29,4 +29,5 @@ echo "=== [SECTION 3] Menyiapkan Izin Eksekusi Main Script ==="
 chmod +x "$DEST_DIR/main_setup.sh"
 
 echo "[SUCCESS] Inisialisasi selesai. Silakan jalankan script utama:"
-echo "cd $DEST_DIR && ./main_setup.sh"
+# --- SESUAIKAN DAN PASTIKAN ISI FILE main_setup.sh SUDAH AMAN TERLEBIH DAHULU SEBELUM MENGEKSEKUSINYA ---
+# echo "cd $DEST_DIR && ./main_setup.sh"
